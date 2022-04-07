@@ -1,6 +1,6 @@
 #include <studio.h>
 /**
- * main
+ * main - Entry point
  * 
  */
 int main (void)
