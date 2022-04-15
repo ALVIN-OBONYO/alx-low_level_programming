@@ -1,23 +1,26 @@
-#include "main.h"
+#include "holberton.h"
+
 /**
- *  * print_most_numbers - print numbers
- *   *
- *    * Return: Always 0.
- *     */
-void print_most_numbers(void)
+ * print_rev - prints a string in reverse, followed by a new line
+ * @s: string to be printed
+ */
+void print_rev(char *s)
 {
+		int i, j, len;
 
-	int i;
+			i = 0;
 
-	i = 0;
-	while (i < 10)
-	{
-		if (i != 2 && i != 4)
-		{
-			_putchar (i + '0');
-		}
-		i++;
-	}
+				while (s[i] != '\0')
+						{
+									i++;
+										}
 
-	_putchar ('\n');
+					len = i;
+
+						for (j = len - 1; j >= 0; j--)
+								{
+											_putchar(s[j]);
+												}
+
+							_putchar('\n');
 }
