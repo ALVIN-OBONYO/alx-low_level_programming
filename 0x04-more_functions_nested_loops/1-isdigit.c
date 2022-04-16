@@ -1,21 +1,23 @@
 #include "main.h"
-
-
-
 /**
- *
- * _isupper - checks for uppercase character
- *
- * @c: the character to be checked
- *
- * Return: 1 if c is uppercase, 0 otherwise
- *
+ * print_most_numbers - print numbers
+ *   
+ * Return: Always 0.
  */
-
-int _isupper(int c)
-
+void print_most_numbers(void)
 {
 
-		return (c >= 'A' && c <= 'Z');
+	int i;
 
+	i = 0;
+	while (i < 10)
+	{
+		if (i != 2 && i != 4)
+		{
+			_putchar (i + '0');
+		}
+		i++;
+	}
+
+	_putchar ('\n');
 }
