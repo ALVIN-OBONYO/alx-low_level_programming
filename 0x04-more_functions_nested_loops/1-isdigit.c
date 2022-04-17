@@ -1,23 +1,15 @@
 #include "main.h"
+
 /**
- * print_most_numbers - print numbers
- *   
- * Return: Always 0.
+ * swap_int - swaps the values of two integers
+ * @a: pointer to first value
+ * @b: pointer to second value
  */
-void print_most_numbers(void)
+void swap_int(int *a, int *b)
 {
+		int c;
 
-	int i;
-
-	i = 0;
-	while (i < 10)
-	{
-		if (i != 2 && i != 4)
-		{
-			_putchar (i + '0');
-		}
-		i++;
-	}
-
-	_putchar ('\n');
+			c = *a;
+				*a = *b;
+					*b = c;
 }
