@@ -1,20 +1,11 @@
 #include "main.h"
+
 /**
- * _isupper - evalue if letter is uppercase .
- *@c: print int
- * Return: Always 0.
+ * reset_to_98 - updates the value of the variable
+ * the pointer points to to 98
+ * @n: pointer to the variable to update
  */
-
-int _isupper(int c)
+void reset_to_98(int *n)
 {
-if (c >= 'A' && c <= 'Z')
-{
-return (1);
-}
-
-else
-{
-return (0);
-}
-
+	*n = 98;
 }
