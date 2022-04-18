@@ -1,15 +1,19 @@
 #include "main.h"
-
 /**
- * swap_int - swaps the values of two integers
- * @a: pointer to first value
- * @b: pointer to second value
+ * _isdigit - if is a digit
+ *@c: print int
+ * Return: Always 0.
  */
-void swap_int(int *a, int *b)
-{
-	int c;
 
-	c = *a;
-	*a = *b;
-	*b = c;
+int _isdigit(int c)
+{
+if (c >= 48 && c <= 57)
+{
+return (1);
+}
+
+else
+{
+return (0);
+}
 }
