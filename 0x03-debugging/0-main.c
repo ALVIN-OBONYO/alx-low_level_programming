@@ -1,4 +1,5 @@
 #include "main.h"
+void positive_or_negative(int i);
 /**
  * main - main
  * Return: 0
