@@ -1,11 +1,15 @@
 #include "main.h"
 
 /**
- *   reset_to_98 - takes a pointer and updates the value
- *   @n:input
- *     Return: Always 0.
-*/
-void reset_to_98(int *n)
+ * swap_int - swap the values of two integers a and b
+ * @a: A pointer to an int that will be updated
+ * @b: B pointer to an int that will be updated
+ * Return void that means our answer is correct
+ */
+void swap_int(int *a, int *b)
 {
-	 *n = 98;
+	int temp;
+	temp = *a;
+	*a = *b;
+	*b = temp;
 }
