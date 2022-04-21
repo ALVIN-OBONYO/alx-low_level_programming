@@ -3,10 +3,10 @@
 #include <string.h>
 
 /**
- *   puts_half -prints the second half
- *   followed by a line
- *    @str:input
- *     Return: Always 0.
+ *  * puts_half -prints the second half
+ *   * followed by a line
+ *    * @str:input
+ *     * Return: Always 0.
 */
 void puts_half(char *str)
 {
@@ -31,4 +31,4 @@ void puts_half(char *str)
 		}
 	}
 	putchar('\n');
-}}
+}
