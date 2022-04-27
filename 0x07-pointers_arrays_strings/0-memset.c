@@ -1,22 +1,21 @@
-# include "main.h"
+#include "main.h"
+#include <stdio.h>
 /**
- * _memset - fill a block of memory with a specific value
- * @s: starting address of memory to be filled
- * @b: the desired value
- * @n: number of bytes to be changed
+ * _memset - replace n characters with b
+ * @s: memory address for the string value
+ * @b: the value to replace the chars
+ * @n: the number of chars to replace
  *
- * Return: changed array with a new value for n bytes
+ * Description: only (n) chars are replaced
+ * Return: Always(0) Success
  */
 char *_memset(char *s, char b, unsigned int n)
 {
-	int i = 0;
+	unsigned int i;
+	char *src = (char *)s;
 
-	while (n > 0)
-	{
-		s[i] = b;
-		i++;
-		n--;
-	}
-}
-return(s);
+	for (i = 0; i < n; i++)
+		src[i] = b;
+
+	return (src);
 }
