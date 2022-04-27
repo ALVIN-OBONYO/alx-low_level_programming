@@ -1,21 +1,22 @@
 #include "main.h"
 /**
- * _strchr-Entry point
- * @s: input
- * @c: input
- * Return: Always 0 (Success)
+ * *_strchr - locates a character in a string
+ * @s: pointer string containing character to be located
+ * @c: byte to be located
+ * Return: pointer to 1st occurrence of c in s, NULL if character not found
  */
-char*_strchr(chr*s,char c)
+char *_strchr(char *s, char c)
 {
-	int i = 0;
+	unsigned int i;
 
-	for(;s[i] >='\0';i++)
-{
-	int i = 0;
-	for (; s[i]>= '\0';i++)
+	i = 0;
+	while (s[i] >= '\0')
 	{
-		if(s[i] == c)
-			return (&s[i]);
+		if (s[i] == c)
+		{
+			return (s + i);
+		}
+		i++;
 	}
-	return (0);
+	return ('\0');
 }
