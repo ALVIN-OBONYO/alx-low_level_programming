@@ -18,5 +18,3 @@ bit_val = (n >> index) & 1;
 
 return (bit_val);
 }
-
-
