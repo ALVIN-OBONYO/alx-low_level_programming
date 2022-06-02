@@ -1,4 +1,6 @@
 #include "main.h"
+#include <stdio.h>
+#include <stdlib.h>
 
 /**
  * error_usage - Prints usage error message and exits.
