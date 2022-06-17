@@ -1,30 +1,29 @@
 #include "main.h"
+
 /**
- * _strcat - concatinates two strings
- * @dest: input parameter string
- * @src: input parameter string
- *
- * Return: dest
+ * _strcat - concatenates two strings
+ * @src: second string to copy from
+ * @dest: string to be overwritten
+ * Description: concatenates src to end of dest
+ * Return: pointer to dest
  */
+
 char *_strcat(char *dest, char *src)
 {
-	int a;
-	int b;
+int i, j;
 
-	a = 0;
+i = 0;
 
-	while (dest[a] != 0)
-	{
-		a++;
-	}
+while (dest[i] != '\0')
+i++;
 
-	b = 0;
+for (j = 0; src[j] != '\0'; j++)
+{
+dest[i] = src[j];
+i++;
+}
 
-	while (src[b] != 0)
-	{
-		dest[a] = src[b];
-		a++;
-		b++;
-	}
-	return (dest);
+dest[i] = src[j];
+
+return (dest);
 }
