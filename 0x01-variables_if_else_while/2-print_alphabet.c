@@ -1,14 +1,18 @@
 #include <stdio.h>
+
 /**
- * * main - Prints the alphabetic
- * *
- * * Return: Always (Success)
- * */
+ * main - prints the alphabet in lowercase,
+ * followed by a new line
+ * Return: Always 0 (Success)
+ */
 int main(void)
 {
-	char c;
-	for (c = 'a'; c <= 'z'; c++)
-		putchar(c);
+	char ch;
+
+	for (ch = 'a'; ch <= 'z'; ch++)
+	{
+		putchar(ch);
+	}
 	putchar('\n');
 	return (0);
 }
